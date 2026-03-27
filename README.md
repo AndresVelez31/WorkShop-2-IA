@@ -252,7 +252,7 @@ Orden recomendado de ejecución:
 | Tipo de datos | Características derivadas de señales | Imágenes faciales |
 | Complejidad de entrada | Media (tabular) | Alta (tensor imagen) |
 | Modelos | Clasicos + DNN MLP | CNN |
-| Métricas clave | Accuracy, Precision, Recall, F1 | MAE, RMSE, R2 (según notebook) |
+| Métricas clave | Accuracy, Precision, Recall, F1 | MAE, RMSE, R2 |
 | Riesgo principal | Errores de detección de fatiga | Sesgo por distribución de edad |
 | Costo computacional | Moderado | Alto |
 
