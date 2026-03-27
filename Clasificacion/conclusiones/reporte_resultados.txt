@@ -1,0 +1,51 @@
+======================================================================
+  REPORTE DE RESULTADOS — DETECCIÓN DE FATIGA MUSCULAR
+======================================================================
+
+MÉTRICAS POR MODELO Y SPLIT
+----------------------------------------------------------------------
+           Modelo Split  Accuracy  Precision  Recall     F1
+              kNN Train    0.8962     0.8788  0.7467 0.8074
+              kNN   Val    0.8670     0.8318  0.6794 0.7479
+              kNN  Test    0.8714     0.8230  0.7099 0.7623
+    Decision Tree Train    0.9429     0.9393  0.8595 0.8976
+    Decision Tree   Val    0.8448     0.7480  0.7023 0.7244
+    Decision Tree  Test    0.8271     0.7023  0.7023 0.7023
+    Random Forest Train    0.9952     1.0000  0.9837 0.9918
+    Random Forest   Val    0.8670     0.7934  0.7328 0.7619
+    Random Forest  Test    0.8958     0.8621  0.7634 0.8097
+Gradient Boosting Train    1.0000     1.0000  1.0000 1.0000
+Gradient Boosting   Val    0.8714     0.8120  0.7252 0.7661
+Gradient Boosting  Test    0.8825     0.8421  0.7328 0.7837
+              DNN Train    0.8610     0.8077  0.6863 0.7420
+              DNN   Val    0.8537     0.8283  0.6260 0.7130
+              DNN  Test    0.8559     0.8000  0.6718 0.7303
+
+MEJORES HIPERPARÁMETROS
+----------------------------------------------------------------------
+kNN:               {'clf__metric': 'manhattan', 'clf__n_neighbors': 7, 'clf__weights': 'uniform'}
+Decision Tree:     {'criterion': 'gini', 'max_depth': 8, 'min_samples_leaf': 1, 'min_samples_split': 2}
+Random Forest:     {'n_estimators': 200, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_features': 0.5, 'max_depth': None}
+Gradient Boosting: {'subsample': 0.7, 'n_estimators': 200, 'min_samples_leaf': 1, 'max_depth': 6, 'learning_rate': 0.05}
+DNN:               {'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (128, 64, 32), 'learning_rate': 'constant'}
+
+MEJOR MODELO
+----------------------------------------------------------------------
+Modelo:     Random Forest
+F1 en Test: 0.8097
+
+MÉTRICAS FINALES (Train+Val → Test)
+----------------------------------------------------------------------
+  Accuracy: 0.8891
+  Precision: 0.8522
+  Recall: 0.7481
+  F1: 0.7967
+
+MATRIZ DE CONFUSIÓN:
+[[303  17]
+ [ 33  98]]
+
+PREDICCIÓN MUESTRA ARTIFICIAL
+----------------------------------------------------------------------
+Resultado: CONDICIÓN NORMAL (0)
+P(Normal)=0.602  |  P(Fatiga)=0.398
