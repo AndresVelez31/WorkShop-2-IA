@@ -135,10 +135,8 @@ Predecir el estado muscular en dos clases:
 
 ## ⏳ Ejercicio 2: Regresión de edad con CNN
 
-✅ Archivos principales:
+✅ Archivo principal:
 
-- `CNN_Age_Regression/data_split.ipynb`
-- `CNN_Age_Regression/age_regression_dataloader (1).ipynb`
 - `CNN_Age_Regression/regression.ipynb`
 
 ### 🎯 Objetivo del ejercicio
