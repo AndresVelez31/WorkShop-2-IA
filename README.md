@@ -163,10 +163,8 @@ Estimar edad (variable continua) desde imágenes faciales.
 
 ### 🚀 Cómo ejecutar
 
-1. Abrir y ejecutar en orden:
-   1. `CNN_Age_Regression/data_split.ipynb`
-   2. `CNN_Age_Regression/age_regression_dataloader (1).ipynb`
-   3. `CNN_Age_Regression/regression.ipynb`
+1. Abrir y ejecutar:
+   1. `CNN_Age_Regression/regression.ipynb`
 2. Verificar que exista `CNN_Age_Regression/dataset/` con `train`, `val`, `test`.
 3. Confirmar guardado de modelo en `best_age_model.pth`.
 
