@@ -70,7 +70,6 @@ WorkShop-2-IA/
 │       ├── boxplots_predicciones.png
 │       └── muestra_artificial.png
 └── CNN_Age_Regression/
-    ├── data_split.ipynb
     ├── regression.ipynb
     ├── best_age_model.pth
     └── dataset/
